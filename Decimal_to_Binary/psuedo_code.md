@@ -1,10 +1,14 @@
-börja med en tom sträng
+START
 
-så länge talet inte är 0:
-    hitta resten
-    spara resten
-    dividera talet med 2
+SET binary to empty string
 
-vänd resultatet
+WHILE decimal is not 0
+    FIND remainder of decimal divided by 2
+    SAVE remainder
+    DIVIDE decimal by 2
 
-returnera resultatet
+REVERSE binary
+
+RETURN binary
+
+END
