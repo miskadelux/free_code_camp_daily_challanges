@@ -1,33 +1,35 @@
-Problem: I have to create a script that converts deciaml intgers to binary
-What am I given?: vinary numbers contain only of 1 and 0, to convert number to binary, devide the number by 2.
+# Decimal → Binary
 
-Need to find:
-- how to find the remiander
-- how to find the 
+## Problem
 
-My approach:
-1.  I set the decimal number that I put in as decimal, then I use a while loop to devide the deciaml until it is 0 
+Convert a decimal integer to a binary string.
 
+## Pseudocode
 
-What confused me:
-...
+1. Start with an empty string.
+2. While the number is not 0:
+   - Find the remainder when dividing by 2.
+   - Save the remainder.
+   - Divide the number by 2.
+3. Reverse the result.
+4. Return the result.
 
-What I learned:
-- when adding to a sting it is simply to use the sting ``` binary = name + "test" ```
-- to get the reaminder simply use the ``` rest = decimal % 2 ```
-- to get the decimal use the ``` decimal = decimal // 2```
-- to turn a number around ```binary[::-1]```
+## Example
 
-Useful Python:
-```
-def to_binary(decimal):
-    binary = ""
-    
-    while decimal != 0:
-        rest = decimal % 2
-        decimal = decimal // 2
-        binary = binary + str(rest)
-        
-    return str(binary[::-1])
+Input:
+13
 
-```
+Process:
+13 → remainder 1
+6  → remainder 0
+3  → remainder 1
+1  → remainder 1
+
+Remainders:
+1011
+
+Reverse:
+1101
+
+Output:
+1101
